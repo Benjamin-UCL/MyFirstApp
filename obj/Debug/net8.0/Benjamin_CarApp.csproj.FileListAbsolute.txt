@@ -12,3 +12,4 @@ C:\Users\benja\source\repos\Benjamin_CarApp\Benjamin_CarApp\obj\Debug\net8.0\ref
 C:\Users\benja\source\repos\Benjamin_CarApp\Benjamin_CarApp\obj\Debug\net8.0\Benjamin_CarApp.pdb
 C:\Users\benja\source\repos\Benjamin_CarApp\Benjamin_CarApp\obj\Debug\net8.0\Benjamin_CarApp.genruntimeconfig.cache
 C:\Users\benja\source\repos\Benjamin_CarApp\Benjamin_CarApp\obj\Debug\net8.0\ref\Benjamin_CarApp.dll
+C:\Users\benja\source\repos\Benjamin_CarApp\Benjamin_CarApp\obj\Debug\net8.0\Benjamin_CarApp.sourcelink.json
