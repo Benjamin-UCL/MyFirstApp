@@ -70,6 +70,7 @@ namespace Benjamin_CarApp
                 default:
                     break;
             }
+            pressAnyKey();
             Console.Clear();
         }
         
@@ -154,7 +155,6 @@ namespace Benjamin_CarApp
             {
                 Console.WriteLine(item);
             }
-            pressAnyKey();
         }
 
         static void drive()
@@ -170,7 +170,15 @@ namespace Benjamin_CarApp
             string Update = String.Format("{0,-15}{1, 15}", "New milage:", newMilage);
 
             string[] res = { "___________RECIPT____________", details, subtotal, lineTripTotal, Update };
+
+           
+
             print(res);
+            if (isPalendrom(newMilage.ToString("0000000000").TrimStart(new Char[] { '0' })))
+            {
+                string[] pal = { "Hey, thats a palendrome!" };
+                print( pal );
+            }
         }
 
         static float addMilage(float distance)
@@ -197,16 +205,27 @@ namespace Benjamin_CarApp
             print(show);
         }
 
-        // Work in progress
-
         static bool isPalendrom(string input)
-        { 
-            // revers string
-            // check reveresed string against string
-            // return true if match
-            return true;
+        {
+            char[] charArray = input.ToCharArray();
+            Array.Reverse(charArray);            
+            string revInput = new string(charArray);
+
+            //Console.WriteLine(revInput);
+            //Console.WriteLine(input);
+
+            if (input == revInput)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }         
         }
 
+
+        // Work in progress
         static void printCar(int id) 
         { 
         
@@ -219,8 +238,6 @@ namespace Benjamin_CarApp
         {
             while (isRunning)
             {
-
-                Char menuSelection = menu();
                 controller(menu());
             }
         }
