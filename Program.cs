@@ -219,6 +219,8 @@ namespace Benjamin_CarApp
         {
             while (isRunning)
             {
+
+                Char menuSelection = menu();
                 controller(menu());
             }
         }

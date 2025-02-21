@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Benjamin_CarApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f522d4ff5a2838c619d932214c8b7832abd68c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+293acd332ceb1ff9f2ba6a095ff3fc2328c525ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("Benjamin_CarApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Benjamin_CarApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
