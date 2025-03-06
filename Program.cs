@@ -224,6 +224,10 @@ namespace Benjamin_CarApp
             Console.WriteLine(myCar.calcTripPrice(132.9, 12.32));
             myCar.drive(132.9);
             myCar.printDetails();
+            myCar.turnOnEngien();
+            myCar.drive(132.9);
+            myCar.printDetails();
+            myCar.turnOfEngien();
 
             //while (isRunning)
             //{

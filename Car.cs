@@ -16,6 +16,7 @@ namespace Benjamin_CarApp
         private char gearType;
         private double milesDriven;
         private double milesPrUnit;
+        private bool engienRunning = false;
 
         public Car(String owner_input, String brand_input, String model_input, int productionYear_input, Char fuleType_input, Char gearType_input, Double milesDriven_input, Double milesPrUnit_input)
         {
@@ -29,13 +30,22 @@ namespace Benjamin_CarApp
             milesPrUnit = milesPrUnit_input;
         }
 
-        public void drive(Double distance)
+        public bool drive(Double distance)
         {
+
+            if (!engienRunning)
+            {
+                Console.WriteLine("Start engien first.");
+                return false;
+            }
+
             if (distance > 0)
             {
                 milesDriven += distance;
             }
             controller.pressAnyKey();
+
+            return true;
         }
 
         public void printDetails() 
@@ -49,6 +59,16 @@ namespace Benjamin_CarApp
             Console.WriteLine(String.Format("{0,-15}{1, 15}", "Gear Type:", gearType));
             Console.WriteLine(String.Format("{0,-15}{1, 15}", "Miles:", milesDriven));
             Console.WriteLine(String.Format("{0,-15}{1, 15}", "Miles Pr./Unit:", milesPrUnit));
+        }
+
+        public void turnOnEngien()
+        {
+            engienRunning = true;
+        }
+
+        public void turnOfEngien()
+        {
+            engienRunning = false;
         }
 
         public double calcTripPrice(double distance, double fulePrice)
