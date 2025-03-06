@@ -225,10 +225,10 @@ namespace Benjamin_CarApp
             myCar.drive(132.9);
             myCar.printDetails();
 
-            while (isRunning)
-            {
-                controller.router(controller.menu());
-            }
+            //while (isRunning)
+            //{
+            //    controller.router(controller.menu());
+            //}
         }
     }
 }
